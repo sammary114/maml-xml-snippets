@@ -1,0 +1,1714 @@
+{
+  "加速度传感器": {
+    "prefix": "accelerometer",
+    "body": [
+      "accelerometer"
+    ],
+    "scope": "xml",
+    "description": "加速度传感器"
+  },
+  "action": {
+    "prefix": "action",
+    "body": [
+      "action=\"${1:up}\""
+    ],
+    "scope": "xml",
+    "description": "action"
+  },
+  "图片显示高度": {
+    "prefix": "actual_h",
+    "body": [
+      "actual_h"
+    ],
+    "scope": "xml",
+    "description": "图片显示高度"
+  },
+  "图片显示宽度": {
+    "prefix": "actual_w",
+    "body": [
+      "actual_w"
+    ],
+    "scope": "xml",
+    "description": "图片显示宽度"
+  },
+  "图片实际X坐标": {
+    "prefix": "actual_x",
+    "body": [
+      "actual_x"
+    ],
+    "scope": "xml",
+    "description": "图片实际X坐标"
+  },
+  "图片实际Y坐标": {
+    "prefix": "actual_y",
+    "body": [
+      "actual_y"
+    ],
+    "scope": "xml",
+    "description": "图片实际Y坐标"
+  },
+  "align": {
+    "prefix": "align",
+    "body": [
+      "align=\"${1:center}\""
+    ],
+    "scope": "xml",
+    "description": "X方向对齐"
+  },
+  "alignChildren": {
+    "prefix": "alignChildren",
+    "body": [
+      "alignChildren=\"${1:true}\""
+    ],
+    "scope": "xml",
+    "description": "Maml"
+  },
+  "alignV": {
+    "prefix": "alignV",
+    "body": [
+      "alignV=\"${1:center}\""
+    ],
+    "scope": "xml",
+    "description": "Y方向对齐"
+  },
+  "透明度": {
+    "prefix": "alpha",
+    "body": [
+      "alpha=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "透明度"
+  },
+  "一直可见": {
+    "prefix": "alwaysShow",
+    "body": [
+      "alwaysShow=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "一直可见"
+  },
+  "ampm": {
+    "prefix": "ampm",
+    "body": [
+      "ampm"
+    ],
+    "scope": "xml",
+    "description": "上下午 0:am 1:pm"
+  },
+  "安卓版本号": {
+    "prefix": "android_version",
+    "body": [
+      "__android_version"
+    ],
+    "scope": "xml",
+    "description": "安卓版本号"
+  },
+  "抗锯齿": {
+    "prefix": "antiAlias",
+    "body": [
+      "antiAlias=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "抗锯齿"
+  },
+  "applied_light_wallpaper": {
+    "prefix": "applied_light_wallpaper",
+    "body": [
+      "applied_light_wallpaper"
+    ],
+    "scope": "xml",
+    "description": "0桌面壁纸为深色，１为浅色"
+  },
+  "歌手名": {
+    "prefix": "artist",
+    "body": [
+      "artist"
+    ],
+    "scope": "xml",
+    "description": "歌手名"
+  },
+  "自动显示": {
+    "prefix": "autoshow",
+    "body": [
+      "autoShow=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "自动显示"
+  },
+  "avc": {
+    "prefix": "align",
+    "body": [
+      "align=\"center\" alignV=\"center\" "
+    ],
+    "scope": "xml",
+    "description": "上下左右居中"
+  },
+  "BackEaseIn": {
+    "prefix": "BackEaseIn",
+    "body": [
+      "BackEaseIn"
+    ],
+    "scope": "xml",
+    "description": "超过范围的三次方缓入"
+  },
+  "BackEaseOut": {
+    "prefix": "BackEaseOut",
+    "body": [
+      "BackEaseOut"
+    ],
+    "scope": "xml",
+    "description": "超过范围的三次方缓出"
+  },
+  "battery_level": {
+    "prefix": "battery_level",
+    "body": [
+      "battery_level"
+    ],
+    "scope": "xml",
+    "description": "当前电量"
+  },
+  "充电状态": {
+    "prefix": "battery_state",
+    "body": [
+      "battery_state"
+    ],
+    "scope": "xml",
+    "description": "充电状态"
+  },
+  "蓝牙状态": {
+    "prefix": "bluetooth_state",
+    "body": [
+      "bluetooth_state"
+    ],
+    "scope": "xml",
+    "description": "蓝牙状态 0关闭 1开启 2信号弱"
+  },
+  "blur": {
+    "prefix": "blur",
+    "body": [
+      "blur=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "blur"
+  },
+  "bmp_height": {
+    "prefix": "bmp_height",
+    "body": [
+      "bmp_height"
+    ],
+    "scope": "xml",
+    "description": "图片文件高度"
+  },
+  "bmp_width": {
+    "prefix": "bmp_width",
+    "body": [
+      "bmp_width"
+    ],
+    "scope": "xml",
+    "description": "图片文件宽度"
+  },
+  "bold": {
+    "prefix": "bold",
+    "body": [
+      "bold=\"${1:true}\""
+    ],
+    "scope": "xml",
+    "description": "bold"
+  },
+  "bottom": {
+    "prefix": "bottom",
+    "body": [
+      "bottom"
+    ],
+    "scope": "xml",
+    "description": "底部对齐"
+  },
+  "BounceEaseIn": {
+    "prefix": "BounceEaseIn",
+    "body": [
+      "BounceEaseIn"
+    ],
+    "scope": "xml",
+    "description": "指数衰减的反弹缓入"
+  },
+  "BounceEaseOut": {
+    "prefix": "BounceEaseOut",
+    "body": [
+      "BounceEaseOut"
+    ],
+    "scope": "xml",
+    "description": "指数衰减的反弹缓出"
+  },
+  "call_missed_count": {
+    "prefix": "call_missed_count",
+    "body": [
+      "call_missed_count"
+    ],
+    "scope": "xml",
+    "description": "未接电话"
+  },
+  "cap": {
+    "prefix": "cap",
+    "body": [
+      "cap=\"$1round\""
+    ],
+    "scope": "xml",
+    "description": "顶点样式"
+  },
+  "category": {
+    "prefix": "category",
+    "body": [
+      "category=\"$1BatteryLow|BatteryFull|Normal|Charging\""
+    ],
+    "scope": "xml",
+    "description": "category"
+  },
+  "center": {
+    "prefix": "center",
+    "body": [
+      "center"
+    ],
+    "scope": "xml",
+    "description": "center"
+  },
+  "centerX": {
+    "prefix": "centerX",
+    "body": [
+      "centerX=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "X中心点"
+  },
+  "centerY": {
+    "prefix": "centerY",
+    "body": [
+      "centerY=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "Y中心点"
+  },
+  "CircEaseOut": {
+    "prefix": "CircEaseOut",
+    "body": [
+      "CircEaseOut"
+    ],
+    "scope": "xml",
+    "description": "圆形曲线缓出"
+  },
+  "clip": {
+    "prefix": "clip",
+    "body": [
+      "clip=\"${1:true}\""
+    ],
+    "scope": "xml",
+    "description": "裁剪"
+  },
+  "color": {
+    "prefix": "color",
+    "body": [
+      "color=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "颜色"
+  },
+  "columns": {
+    "prefix": "columns",
+    "body": [
+      "columns=\"\"${1:col1},${2:col2}\""
+    ],
+    "scope": "xml",
+    "description": "columns"
+  },
+  "condition": {
+    "prefix": "condition",
+    "body": [
+      "condition=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "条件判断"
+  },
+  "const": {
+    "prefix": "const",
+    "body": [
+      "const=\"${1:true}\""
+    ],
+    "scope": "xml",
+    "description": "执行一次"
+  },
+  "cornerRadius": {
+    "prefix": "cornerRadius",
+    "body": [
+      "cornerRadius=\"$1\" "
+    ],
+    "scope": "xml",
+    "description": "Maml"
+  },
+  "countName": {
+    "prefix": "countName",
+    "body": [
+      "countName=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "countName"
+  },
+  "CubicEaseIn": {
+    "prefix": "CubicEaseIn",
+    "body": [
+      "CubicEaseIn"
+    ],
+    "scope": "xml",
+    "description": "三次方缓入"
+  },
+  "CubicEaseOut": {
+    "prefix": "CubicEaseOut",
+    "body": [
+      "CubicEaseOut"
+    ],
+    "scope": "xml",
+    "description": "三次方缓出"
+  },
+  "dash": {
+    "prefix": "dash",
+    "body": [
+      "dash=\"$1,$2,$3,$4\""
+    ],
+    "scope": "xml",
+    "description": "虚线模式"
+  },
+  "数据状态": {
+    "prefix": "data_state",
+    "body": [
+      "data_state"
+    ],
+    "scope": "xml",
+    "description": "数据状态 0关闭 1开启"
+  },
+  "农历日期": {
+    "prefix": "date_lunar",
+    "body": [
+      "date_lunar"
+    ],
+    "scope": "xml",
+    "description": "农历日期 从1开始计"
+  },
+  "日期": {
+    "prefix": "date",
+    "body": [
+      "date"
+    ],
+    "scope": "xml",
+    "description": "日期"
+  },
+  "星期": {
+    "prefix": "day_of_week",
+    "body": [
+      "day_of_week"
+    ],
+    "scope": "xml",
+    "description": "星期"
+  },
+  "delay": {
+    "prefix": "delay",
+    "body": [
+      "delay=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "延时"
+  },
+  "digit": {
+    "prefix": "digit",
+    "body": [
+      "digit(${1:数字},${2:第几位})"
+    ],
+    "scope": "xml",
+    "description": "数字位置"
+  },
+  "双击": {
+    "prefix": "double",
+    "body": [
+      "double"
+    ],
+    "scope": "xml",
+    "description": "双击"
+  },
+  "缓动时间": {
+    "prefix": "easeTime",
+    "body": [
+      "easeTime=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "缓动时间"
+  },
+  "缓动类型": {
+    "prefix": "easeType",
+    "body": [
+      "easeType=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "缓动类型"
+  },
+  "ElasticEaseIn": {
+    "prefix": "ElasticEaseIn",
+    "body": [
+      "ElasticEaseIn"
+    ],
+    "scope": "xml",
+    "description": "指数衰减的正弦曲线缓入"
+  },
+  "ElasticEaseOut": {
+    "prefix": "ElasticEaseOut",
+    "body": [
+      "ElasticEaseOut"
+    ],
+    "scope": "xml",
+    "description": "指数衰减的正弦曲线缓出"
+  },
+  "eqs": {
+    "prefix": "eqs",
+    "body": [
+      "eqs($1,$2)"
+    ],
+    "scope": "xml",
+    "description": "包含"
+  },
+  "eval": {
+    "prefix": "eval",
+    "body": [
+      "eval('@' + @$1)"
+    ],
+    "scope": "xml",
+    "description": "字符串计算"
+  },
+  "ExpoEaseIn": {
+    "prefix": "ExpoEaseIn",
+    "body": [
+      "ExpoEaseIn"
+    ],
+    "scope": "xml",
+    "description": "指数曲线缓入"
+  },
+  "ExpoEaseOut": {
+    "prefix": "ExpoEaseOut",
+    "body": [
+      "ExpoEaseOut"
+    ],
+    "scope": "xml",
+    "description": "指数曲线缓出"
+  },
+  "expression": {
+    "prefix": "expression",
+    "body": [
+      "expression=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "expression"
+  },
+  "false": {
+    "prefix": "false",
+    "body": [
+      "false"
+    ],
+    "scope": "xml",
+    "description": "false"
+  },
+  "fillColor": {
+    "prefix": "fillColor",
+    "body": [
+      "fillColor=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "填充颜色"
+  },
+  "fontFamily": {
+    "prefix": "fillColor",
+    "body": [
+      "fontFamily=\"${1:miui-thin}\""
+    ],
+    "scope": "xml",
+    "description": "填充颜色"
+  },
+  "format": {
+    "prefix": "format",
+    "body": [
+      "format=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "格式"
+  },
+  "frame_rate": {
+    "prefix": "frame_rate",
+    "body": [
+      "frame_rate"
+    ],
+    "scope": "xml",
+    "description": "当前屏幕帧率"
+  },
+  "frameRate": {
+    "prefix": "frameRate",
+    "body": [
+      "frameRate=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "帧率"
+  },
+  "gravity": {
+    "prefix": "gravity",
+    "body": [
+      "gravity"
+    ],
+    "scope": "xml",
+    "description": "传感器重力感应"
+  },
+  "h_hight": {
+    "prefix": "h",
+    "body": [
+      "h=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "高度"
+  },
+  "haptic": {
+    "prefix": "haptic",
+    "body": [
+      "haptic=\"${1:true}\""
+    ],
+    "scope": "xml",
+    "description": "haptic"
+  },
+  "hour24": {
+    "prefix": "hour24",
+    "body": [
+      "hour24"
+    ],
+    "scope": "xml",
+    "description": "24小时制"
+  },
+  "ifelse": {
+    "prefix": "ifelse",
+    "body": [
+      "ifelse($1,$2,$3)"
+    ],
+    "scope": "xml",
+    "description": "ifelse"
+  },
+  "index": {
+    "prefix": "index",
+    "body": [
+      "index=\"$1\" "
+    ],
+    "scope": "xml",
+    "description": "角标"
+  },
+  "indexName": {
+    "prefix": "indexName",
+    "body": [
+      "indexName=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "indexName"
+  },
+  "initPause": {
+    "prefix": "initPause",
+    "body": [
+      "initPause=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "是否手动触发播放"
+  },
+  "int": {
+    "prefix": "int",
+    "body": [
+      "int($1)"
+    ],
+    "scope": "xml",
+    "description": "向下取整"
+  },
+  "interceptTouch": {
+    "prefix": "interceptTouch",
+    "body": [
+      "interceptTouch=\"${1:true}\""
+    ],
+    "scope": "xml",
+    "description": "截获以后的触摸事件"
+  },
+  "isnull": {
+    "prefix": "isnull",
+    "body": [
+      "isnull(#$1)"
+    ],
+    "scope": "xml",
+    "description": "判断数字为空"
+  },
+  "layered": {
+    "prefix": "layered",
+    "body": [
+      "layered=\"${1:true}\""
+    ],
+    "scope": "xml",
+    "description": "只作用于Group内部的元素"
+  },
+  "left": {
+    "prefix": "left",
+    "body": [
+      "left"
+    ],
+    "scope": "xml",
+    "description": "left"
+  },
+  "len": {
+    "prefix": "len",
+    "body": [
+      "len($1)"
+    ],
+    "scope": "xml",
+    "description": "字符串长度"
+  },
+  "linear_acceleration": {
+    "prefix": "linear_acceleration",
+    "body": [
+      "linear_acceleration"
+    ],
+    "scope": "xml",
+    "description": "线性加速度传感器"
+  },
+  "loop": {
+    "prefix": "loop",
+    "body": [
+      "loop=\"${1:false}\""
+    ],
+    "scope": "xml",
+    "description": "循环播放"
+  },
+  "lyric_after": {
+    "prefix": "lyric_after",
+    "body": [
+      "lyric_after"
+    ],
+    "scope": "xml",
+    "description": "上一句歌词"
+  },
+  "lyric_before": {
+    "prefix": "lyric_before",
+    "body": [
+      "lyric_before"
+    ],
+    "scope": "xml",
+    "description": "已播放歌词"
+  },
+  "lyric_current_line_progress": {
+    "prefix": "lyric_current_line_progress",
+    "body": [
+      "lyric_current_line_progress"
+    ],
+    "scope": "xml",
+    "description": "当前歌词播放进度"
+  },
+  "lyric_current": {
+    "prefix": "lyric_current",
+    "body": [
+      "lyric_current"
+    ],
+    "scope": "xml",
+    "description": "当前播放歌词"
+  },
+  "lyric_last": {
+    "prefix": "lyric_last",
+    "body": [
+      "lyric_last"
+    ],
+    "scope": "xml",
+    "description": "下一句歌词"
+  },
+  "maml_version": {
+    "prefix": "maml_version",
+    "body": [
+      "__maml_version"
+    ],
+    "scope": "xml",
+    "description": "maml版本号"
+  },
+  "marqueeGap": {
+    "prefix": "marqueeGap",
+    "body": [
+      "marqueeGap=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "文字滚动间隔"
+  },
+  "marqueeSpeed": {
+    "prefix": "marqueeSpeed",
+    "body": [
+      "marqueeSpeed=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "文字滚动速度"
+  },
+  "minute": {
+    "prefix": "minute",
+    "body": [
+      "minute"
+    ],
+    "scope": "xml",
+    "description": "分钟"
+  },
+  "miui_version_code": {
+    "prefix": "miui_version_code",
+    "body": [
+      "__miui_version_code"
+    ],
+    "scope": "xml",
+    "description": "MIUI版本号"
+  },
+  "month_lunar_leap": {
+    "prefix": "month_lunar_leap",
+    "body": [
+      "month_lunar_leap"
+    ],
+    "scope": "xml",
+    "description": "是否润月"
+  },
+  "month_lunar": {
+    "prefix": "month_lunar",
+    "body": [
+      "month_lunar"
+    ],
+    "scope": "xml",
+    "description": "农历月份 从0开始计"
+  },
+  "month": {
+    "prefix": "month",
+    "body": [
+      "month"
+    ],
+    "scope": "xml",
+    "description": "月份"
+  },
+  "move_dist": {
+    "prefix": "move_dist",
+    "body": [
+      "move_dist"
+    ],
+    "scope": "xml",
+    "description": "移动的距离"
+  },
+  "move_x": {
+    "prefix": "move_x",
+    "body": [
+      "move_x"
+    ],
+    "scope": "xml",
+    "description": "x方向的偏移"
+  },
+  "move_y": {
+    "prefix": "move_y",
+    "body": [
+      "move_y"
+    ],
+    "scope": "xml",
+    "description": "y方向的偏移"
+  },
+  "multiLine ": {
+    "prefix": "multiLine ",
+    "body": [
+      "multiLine=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "换行"
+  },
+  "music_album_cover": {
+    "prefix": "music_album_cover",
+    "body": [
+      "music_album_cover"
+    ],
+    "scope": "xml",
+    "description": "专辑封面"
+  },
+  "music_duration": {
+    "prefix": "music_duration",
+    "body": [
+      "music_duration"
+    ],
+    "scope": "xml",
+    "description": "歌曲长度，单位ms"
+  },
+  "music_next": {
+    "prefix": "music_next",
+    "body": [
+      "music_next"
+    ],
+    "scope": "xml",
+    "description": "下一首"
+  },
+  "music_pause": {
+    "prefix": "music_pause",
+    "body": [
+      "music_pause"
+    ],
+    "scope": "xml",
+    "description": "音乐暂停"
+  },
+  "music_play": {
+    "prefix": "music_play",
+    "body": [
+      "music_play"
+    ],
+    "scope": "xml",
+    "description": "音乐播放"
+  },
+  "music_position": {
+    "prefix": "music_position",
+    "body": [
+      "music_position"
+    ],
+    "scope": "xml",
+    "description": "当前播放位置，单位ms"
+  },
+  "music_prev": {
+    "prefix": "music_prev",
+    "body": [
+      "music_prev"
+    ],
+    "scope": "xml",
+    "description": "上一首"
+  },
+  "music_state": {
+    "prefix": "music_state",
+    "body": [
+      "music_state"
+    ],
+    "scope": "xml",
+    "description": "音乐播放状态"
+  },
+  "name": {
+    "prefix": "name",
+    "body": [
+      "name=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "名称"
+  },
+  "next_alarm_time": {
+    "prefix": "next_alarm_time",
+    "body": [
+      "next_alarm_time"
+    ],
+    "scope": "xml",
+    "description": "下一个闹钟时间"
+  },
+  "number": {
+    "prefix": "number",
+    "body": [
+      "number"
+    ],
+    "scope": "xml",
+    "description": "number"
+  },
+  "orientation": {
+    "prefix": "orientation",
+    "body": [
+      "orientation"
+    ],
+    "scope": "xml",
+    "description": "方向传感器"
+  },
+  "paramsFormat": {
+    "prefix": "paramsFormat",
+    "body": [
+      "paramsFormat=\"$1:%s\""
+    ],
+    "scope": "xml",
+    "description": "paramsFormat"
+  },
+  "paramsParas": {
+    "prefix": "paramsParas",
+    "body": [
+      "paramsParas=\"%s\""
+    ],
+    "scope": "xml",
+    "description": "配合format ,分隔"
+  },
+  "paras": {
+    "prefix": "paras",
+    "body": [
+      "paras=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "paras"
+  },
+  "pause": {
+    "prefix": "pause",
+    "body": [
+      "pause"
+    ],
+    "scope": "xml",
+    "description": "pause"
+  },
+  "persist": {
+    "prefix": "persist",
+    "body": [
+      "persist=\"${1:true}\""
+    ],
+    "scope": "xml",
+    "description": "变量持久化"
+  },
+  "pivotX": {
+    "prefix": "pivotX ",
+    "body": [
+      "pivotX=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "X旋转中心"
+  },
+  "pivotY": {
+    "prefix": "pivotY",
+    "body": [
+      "pivotY=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "Y旋转中心"
+  },
+  "pivotZ": {
+    "prefix": "pivotZ",
+    "body": [
+      "pivotZ=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "Z旋转中心"
+  },
+  "play": {
+    "prefix": "play",
+    "body": [
+      "play"
+    ],
+    "scope": "xml",
+    "description": "play"
+  },
+  "preciseeval": {
+    "prefix": "preciseeval",
+    "body": [
+      "preciseeval(@$1,8)"
+    ],
+    "scope": "xml",
+    "description": "计算字符串的值"
+  },
+  "QuadEaseIn": {
+    "prefix": "QuadEaseIn",
+    "body": [
+      "QuadEaseIn"
+    ],
+    "scope": "xml",
+    "description": "二次方缓入"
+  },
+  "QuadEaseOut": {
+    "prefix": "QuadEaseOut",
+    "body": [
+      "QuadEaseOut"
+    ],
+    "scope": "xml",
+    "description": "二次方缓出"
+  },
+  "QuartEaseIn": {
+    "prefix": "QuartEaseIn",
+    "body": [
+      "QuartEaseIn"
+    ],
+    "scope": "xml",
+    "description": "四次方缓入"
+  },
+  "QuartEaseOut": {
+    "prefix": "QuartEaseOut",
+    "body": [
+      "QuartEaseOut"
+    ],
+    "scope": "xml",
+    "description": "四次方缓出"
+  },
+  "QuintEaseIn": {
+    "prefix": "QuintEaseIn",
+    "body": [
+      "QuintEaseIn"
+    ],
+    "scope": "xml",
+    "description": "五次方缓入"
+  },
+  "QuintEaseOut": {
+    "prefix": "QuintEaseOut",
+    "body": [
+      "QuintEaseOut"
+    ],
+    "scope": "xml",
+    "description": "五次方缓出"
+  },
+  "rand": {
+    "prefix": "rand",
+    "body": [
+      "rand()$1"
+    ],
+    "scope": "xml",
+    "description": "随机数"
+  },
+  "raw_screen_height": {
+    "prefix": "raw_screen_height",
+    "body": [
+      "raw_screen_height "
+    ],
+    "scope": "xml",
+    "description": "物理高度"
+  },
+  "raw_screen_width": {
+    "prefix": "raw_screen_width",
+    "body": [
+      "raw_screen_width"
+    ],
+    "scope": "xml",
+    "description": "物理宽度"
+  },
+  "resume": {
+    "prefix": "resume",
+    "body": [
+      "resume"
+    ],
+    "scope": "xml",
+    "description": "resume"
+  },
+  "right": {
+    "prefix": "right",
+    "body": [
+      "right"
+    ],
+    "scope": "xml",
+    "description": "right"
+  },
+  "ring_mode": {
+    "prefix": "ring_mode",
+    "body": [
+      "ring_mode"
+    ],
+    "scope": "xml",
+    "description": "铃声模式 0静音 1震动 2正常"
+  },
+  "rotation": {
+    "prefix": "rotation",
+    "body": [
+      "rotation=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "旋转"
+  },
+  "rotationX": {
+    "prefix": "rotationX",
+    "body": [
+      "rotationX=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "X轴旋转角度"
+  },
+  "rotationY": {
+    "prefix": "rotationY",
+    "body": [
+      "rotationY=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "Y轴旋转角度"
+  },
+  "rotationZ": {
+    "prefix": "rotationZ",
+    "body": [
+      "rotationZ=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "Z轴旋转角度"
+  },
+  "round": {
+    "prefix": "round",
+    "body": [
+      "round($1)"
+    ],
+    "scope": "xml",
+    "description": "四舍五入取整"
+  },
+  "scale": {
+    "prefix": "scale",
+    "body": [
+      "scale=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "缩放"
+  },
+  "screen_height": {
+    "prefix": "screen_height",
+    "body": [
+      "screen_height"
+    ],
+    "scope": "xml",
+    "description": "屏幕高度"
+  },
+  "screen_width": {
+    "prefix": "screen_width",
+    "body": [
+      "screen_width"
+    ],
+    "scope": "xml",
+    "description": "屏幕宽度"
+  },
+  "second": {
+    "prefix": "second",
+    "body": [
+      "second"
+    ],
+    "scope": "xml",
+    "description": "秒"
+  },
+  "SineEaseIn": {
+    "prefix": "SineEaseIn",
+    "body": [
+      "SineEaseIn"
+    ],
+    "scope": "xml",
+    "description": "正弦曲线缓入"
+  },
+  "SineEaseOut": {
+    "prefix": "SineEaseOut",
+    "body": [
+      "SineEaseOut"
+    ],
+    "scope": "xml",
+    "description": "正弦曲线缓出"
+  },
+  "size": {
+    "prefix": "size",
+    "body": [
+      "size=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "size"
+  },
+  "sms_unread_count": {
+    "prefix": "sms_unread_count",
+    "body": [
+      "sms_unread_count"
+    ],
+    "scope": "xml",
+    "description": "未读短信"
+  },
+  "src": {
+    "prefix": "src",
+    "body": [
+      "src=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "图片源"
+  },
+  "srcExp": {
+    "prefix": "srcExp",
+    "body": [
+      "srcExp=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "图片源表达式"
+  },
+  "srcForamtExp": {
+    "prefix": "srcForamtExp",
+    "body": [
+      "srcForamtExp=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "图片源格式表达式"
+  },
+  "srcFormat": {
+    "prefix": "srcFormat",
+    "body": [
+      "srcFormat=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "图片源格式"
+  },
+  "srcH": {
+    "prefix": "srcH",
+    "body": [
+      "srcH=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "srcH"
+  },
+  "srcid": {
+    "prefix": "srcid",
+    "body": [
+      "srcid=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "图片ID"
+  },
+  "srcParas": {
+    "prefix": "srcParas",
+    "body": [
+      "srcParas=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "图片源参数"
+  },
+  "srcW": {
+    "prefix": "srcW",
+    "body": [
+      "srcW=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "srcW"
+  },
+  "srcX": {
+    "prefix": "srcX",
+    "body": [
+      "srcX=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "srcX"
+  },
+  "srcY": {
+    "prefix": "srcY",
+    "body": [
+      "srcY=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "srcY"
+  },
+  "strContains": {
+    "prefix": "strContains",
+    "body": [
+      "strContains($1,$2)"
+    ],
+    "scope": "xml",
+    "description": "字符串包含"
+  },
+  "strIndexOf": {
+    "prefix": "strIndexOf",
+    "body": [
+      "strIndexOf($1,$2)"
+    ],
+    "scope": "xml",
+    "description": "字符串出现位置"
+  },
+  "string": {
+    "prefix": "string",
+    "body": [
+      "string"
+    ],
+    "scope": "xml",
+    "description": "string"
+  },
+  "strIsEmpty": {
+    "prefix": "strIsEmpty",
+    "body": [
+      "strIsEmpty(@$1)"
+    ],
+    "scope": "xml",
+    "description": "判断字符串为空"
+  },
+  "strokeAlign": {
+    "prefix": "strokeAlign",
+    "body": [
+      "strokeAlign=\"${1:inner}\""
+    ],
+    "scope": "xml",
+    "description": "描边对齐样式"
+  },
+  "strokeColor": {
+    "prefix": "strokeColor",
+    "body": [
+      "strokeColor=\"$1\" "
+    ],
+    "scope": "xml",
+    "description": "描边颜色"
+  },
+  "strReplaceAll": {
+    "prefix": "strReplaceAll",
+    "body": [
+      "strReplaceAll($1,$2)"
+    ],
+    "scope": "xml",
+    "description": "字符串替换"
+  },
+  "substr": {
+    "prefix": "substr",
+    "body": [
+      "substr(${1:原字符串},${2:字符串开始位置},${3:字串长度})"
+    ],
+    "scope": "xml",
+    "description": "数字位置"
+  },
+  "system_version": {
+    "prefix": "system_version",
+    "body": [
+      "__system_version"
+    ],
+    "scope": "xml",
+    "description": "Rom版本号"
+  },
+  "targetIndex": {
+    "prefix": "targetIndex",
+    "body": [
+      "targetIndex=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "targetIndex"
+  },
+  "text_width": {
+    "prefix": "text_width",
+    "body": [
+      "text_width"
+    ],
+    "scope": "xml",
+    "description": "文本的宽度"
+  },
+  "textExp": {
+    "prefix": "textExp",
+    "body": [
+      "textExp=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "文字表达式"
+  },
+  "thememanager_version": {
+    "prefix": "thememanager_version",
+    "body": [
+      "__thememanager_version"
+    ],
+    "scope": "xml",
+    "description": "主题客户端版本号"
+  },
+  "threshold": {
+    "prefix": "threshold",
+    "body": [
+      "threshold=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "阈值"
+  },
+  "time_format": {
+    "prefix": "time_format",
+    "body": [
+      "time_format"
+    ],
+    "scope": "xml",
+    "description": "0：12小时制 1：24小时制"
+  },
+  "time_sys": {
+    "prefix": "time_sys",
+    "body": [
+      "time_sys"
+    ],
+    "scope": "xml",
+    "description": "系统时间戳"
+  },
+  "time": {
+    "prefix": "time",
+    "body": [
+      "time"
+    ],
+    "scope": "xml",
+    "description": "当前时间"
+  },
+  "title": {
+    "prefix": "title",
+    "body": [
+      "title"
+    ],
+    "scope": "xml",
+    "description": "歌名"
+  },
+  "toggle": {
+    "prefix": "toggle",
+    "body": [
+      "toggle"
+    ],
+    "scope": "xml",
+    "description": "切换"
+  },
+  "top": {
+    "prefix": "top",
+    "body": [
+      "top"
+    ],
+    "scope": "xml",
+    "description": "顶部对齐"
+  },
+  "touch_begin_time": {
+    "prefix": "touch_begin_time",
+    "body": [
+      "touch_begin_time"
+    ],
+    "scope": "xml",
+    "description": "按下屏幕时的时间"
+  },
+  "touch_begin_x": {
+    "prefix": "touch_begin_x",
+    "body": [
+      "touch_begin_x"
+    ],
+    "scope": "xml",
+    "description": "按下屏幕时的初始x坐标"
+  },
+  "touch_begin_y": {
+    "prefix": "touch_begin_y",
+    "body": [
+      "touch_begin_y"
+    ],
+    "scope": "xml",
+    "description": "按下屏幕时的初始y坐标"
+  },
+  "touch_x": {
+    "prefix": "touch_x",
+    "body": [
+      "touch_x"
+    ],
+    "scope": "xml",
+    "description": "当前触摸点的x坐标"
+  },
+  "touch_y": {
+    "prefix": "touch_y",
+    "body": [
+      "touch_y"
+    ],
+    "scope": "xml",
+    "description": "当前触摸点的y坐标"
+  },
+  "touchable": {
+    "prefix": "touchable",
+    "body": [
+      "touchable=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "可触摸"
+  },
+  "true": {
+    "prefix": "true",
+    "body": [
+      "true"
+    ],
+    "scope": "xml",
+    "description": "true"
+  },
+  "type": {
+    "prefix": "type",
+    "body": [
+      "type=\"${1:string}\""
+    ],
+    "scope": "xml",
+    "description": "类型"
+  },
+  "uri": {
+    "prefix": "uri",
+    "body": [
+      "uri=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "uri"
+  },
+  "uriFormat": {
+    "prefix": "uriFormat",
+    "body": [
+      "uriFormat=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "uriFormat"
+  },
+  "urinotification": {
+    "prefix": "urinotification",
+    "body": [
+      "uri=\"content://keyguard.notification/notifications\""
+    ],
+    "scope": "xml",
+    "description": "通知链接"
+  },
+  "uriParas": {
+    "prefix": "uriParas",
+    "body": [
+      "uriParas=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "uriParas"
+  },
+  "uristeps": {
+    "prefix": "uristeps",
+    "body": [
+      "uri=\"content://com.miui.providers.steps/item\""
+    ],
+    "scope": "xml",
+    "description": "计步链接"
+  },
+  "uriweather": {
+    "prefix": "uriweather",
+    "body": [
+      "uri=\"content://weather/weather\""
+    ],
+    "scope": "xml",
+    "description": "天气链接"
+  },
+  "usb_mode": {
+    "prefix": "usb_mode",
+    "body": [
+      "usb_mode"
+    ],
+    "scope": "xml",
+    "description": "USB模式 0断开 1只充电 2存储 3intermediate"
+  },
+  "view_height": {
+    "prefix": "view_height",
+    "body": [
+      "view_height"
+    ],
+    "scope": "xml",
+    "description": "部件高度"
+  },
+  "view_width": {
+    "prefix": "view_width",
+    "body": [
+      "view_width"
+    ],
+    "scope": "xml",
+    "description": "部件宽度"
+  },
+  "visibility": {
+    "prefix": "visibility",
+    "body": [
+      "visibility=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "可见性"
+  },
+  "volume_level_old": {
+    "prefix": "volume_level_old",
+    "body": [
+      "volume_level_old"
+    ],
+    "scope": "xml",
+    "description": "调节之前的音量 取值1-15"
+  },
+  "volume_level": {
+    "prefix": "volume_level",
+    "body": [
+      "volume_level"
+    ],
+    "scope": "xml",
+    "description": "现在音量"
+  },
+  "volume_type": {
+    "prefix": "volume_type",
+    "body": [
+      "volume_type"
+    ],
+    "scope": "xml",
+    "description": "volume_type"
+  },
+  "w_width": {
+    "prefix": "w",
+    "body": [
+      "w=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "宽度"
+  },
+  "wallpaper_offset_pixel_x": {
+    "prefix": "wallpaper_offset_pixel_x",
+    "body": [
+      "wallpaper_offset_pixel_x"
+    ],
+    "scope": "xml",
+    "description": "偏移的像素数 （0 ～ -1*屏宽）"
+  },
+  "wallpaper_offset_x": {
+    "prefix": "wallpaper_offset_x",
+    "body": [
+      "wallpaper_offset_x"
+    ],
+    "scope": "xml",
+    "description": "偏移百分比 （0 ~ 1.0）"
+  },
+  "weight": {
+    "prefix": "weight",
+    "body": [
+      "weight=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "描边宽度"
+  },
+  "where": {
+    "prefix": "where",
+    "body": [
+      "where=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "where"
+  },
+  "width": {
+    "prefix": "width",
+    "body": [
+      "width=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "宽度"
+  },
+  "wifi_state": {
+    "prefix": "wifi_state",
+    "body": [
+      "wifi_state"
+    ],
+    "scope": "xml",
+    "description": "wifi状态 0关闭 1开启 2有问题 3信号弱"
+  },
+  "xfermode": {
+    "prefix": "xfermode",
+    "body": [
+      "xfermode=\"${1:dst_in}\""
+    ],
+    "scope": "xml",
+    "description": "混合模式"
+  },
+  "xfermodeNum": {
+    "prefix": "xfermodeNum",
+    "body": [
+      "xfermodeNum=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "混合模式表达式"
+  },
+  "Xordinate": {
+    "prefix": "x",
+    "body": [
+      "x=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "x坐标"
+  },
+  "year_lunar": {
+    "prefix": "year_lunar",
+    "body": [
+      "year_lunar"
+    ],
+    "scope": "xml",
+    "description": "农历年份"
+  },
+  "year_lunar1864": {
+    "prefix": "year_lunar1864",
+    "body": [
+      "year_lunar1864"
+    ],
+    "scope": "xml",
+    "description": "天干地支"
+  },
+  "year": {
+    "prefix": "year",
+    "body": [
+      "year"
+    ],
+    "scope": "xml",
+    "description": "年"
+  },
+  "Yordinate": {
+    "prefix": "y",
+    "body": [
+      "y=\"$1\""
+    ],
+    "scope": "xml",
+    "description": "y坐标"
+  }
+}

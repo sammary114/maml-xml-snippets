@@ -1,0 +1,20 @@
+{
+  "name": "maml-xml-snippets",
+  "displayName": "Maml Xml Snippets",
+  "description": "XML snippets for MIUI Application Markup Language for MORE",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "xml",
+        "path": "./snippets/snippet.code-snippets"
+      }
+    ]
+  }
+}
