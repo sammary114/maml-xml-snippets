@@ -117,7 +117,7 @@
       "applied_light_wallpaper"
     ],
     "scope": "xml",
-    "description": "0桌面壁纸为深色，１为浅色"
+    "description": "0桌面壁纸为深色, 1为浅色"
   },
   "歌手名": {
     "prefix": "artist",
@@ -829,7 +829,7 @@
       "music_duration"
     ],
     "scope": "xml",
-    "description": "歌曲长度，单位ms"
+    "description": "歌曲长度, 单位ms"
   },
   "music_next": {
     "prefix": "music_next",
@@ -861,7 +861,7 @@
       "music_position"
     ],
     "scope": "xml",
-    "description": "当前播放位置，单位ms"
+    "description": "当前播放位置, 单位ms"
   },
   "music_prev": {
     "prefix": "music_prev",
@@ -1383,15 +1383,15 @@
     "scope": "xml",
     "description": "阈值"
   },
-  "time_format": {
+  "小时制": {
     "prefix": "time_format",
     "body": [
       "time_format"
     ],
     "scope": "xml",
-    "description": "0：12小时制 1：24小时制"
+    "description": "0:12小时制 1:24小时制"
   },
-  "time_sys": {
+  "系统时间戳": {
     "prefix": "time_sys",
     "body": [
       "time_sys"
@@ -1399,7 +1399,7 @@
     "scope": "xml",
     "description": "系统时间戳"
   },
-  "time": {
+  "当前时间": {
     "prefix": "time",
     "body": [
       "time"
@@ -1407,7 +1407,7 @@
     "scope": "xml",
     "description": "当前时间"
   },
-  "title": {
+  "歌名": {
     "prefix": "title",
     "body": [
       "title"
@@ -1423,7 +1423,7 @@
     "scope": "xml",
     "description": "切换"
   },
-  "top": {
+  "顶部对齐": {
     "prefix": "top",
     "body": [
       "top"
@@ -1613,7 +1613,7 @@
       "wallpaper_offset_pixel_x"
     ],
     "scope": "xml",
-    "description": "偏移的像素数 （0 ～ -1*屏宽）"
+    "description": "偏移的像素数  (0 ~ -1*屏宽) "
   },
   "wallpaper_offset_x": {
     "prefix": "wallpaper_offset_x",
@@ -1621,7 +1621,7 @@
       "wallpaper_offset_x"
     ],
     "scope": "xml",
-    "description": "偏移百分比 （0 ~ 1.0）"
+    "description": "偏移百分比  (0 ~ 1.0) "
   },
   "weight": {
     "prefix": "weight",
