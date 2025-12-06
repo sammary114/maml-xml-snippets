@@ -1,65 +1,74 @@
-# maml-xml-snippets README
+# maml-xml-snippets
 
-This is the README for your extension "maml-xml-snippets". After writing up a brief description, we recommend including the following sections.
+本扩展提供用于 MAML（MIUI Application Markup Language for MORE）的 VS Code 代码片段，方便编写和维护基于 MAML 的界面描述 XML。
 
-## Features
+## 概述
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+MAML 最初用于 MIUI 的百变锁屏，以 XML + 特定语法描述锁屏界面。与 Android 的静态界面 XML 不同，MAML 支持时间线驱动的动态属性表达式——UI 会按帧率渲染并根据变量表达式实时更新，从而实现动画、交互和数据驱动的显示。MAML 引擎已从锁屏中独立，成为 MIUI 内置的通用界面描述与渲染框架，适用于时钟、天气小部件、闹钟界面等信息展示或轻交互场景。
 
-For example if there is an image subfolder under your extension project workspace:
+本仓库包含一组实用的代码片段，帮助在 VS Code 中快速插入常用的 MAML 元素与属性，提升编写效率与正确性。
 
-\!\[feature X\]\(images/feature-x.png\)
+## 主要特性
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- 常用 MAML 元素片段：快速插入 `Container`、`Text`、`Image`、`Animation` 等模板
+- 动态属性与表达式示例片段，含时间/条件/变量绑定写法
+- 示例与注释，便于新手理解 MAML 的渲染与帧率机制
+- 轻量、零依赖，直接放入 VS Code 即可使用
 
-## Requirements
+## 安装
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. 将本仓库作为 VS Code 扩展或片段包安装，或直接在本地把 `snippets/` 目录放入用户片段目录。
+2. 在 VS Code 中打开一个 MAML/ XML 文件（或 .xml），按 `Ctrl+Space` 调出补全，输入片段前缀（见下文）并回车插入。
 
-## Extension Settings
+## 快速上手
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. 打开或创建一个 MAML XML 文件。
+2. 触发补全（`Ctrl+Space`）并输入片段前缀，例如 `maml-container`、`maml-text` 等。
+3. 插入后根据注释替换占位符内容。
 
-For example:
+示例：插入一个基础容器与文本片段后，替换 text 与绑定表达式即可在运行时看到动态效果（取决于你的 MAML 引擎环境）。
 
-This extension contributes the following settings:
+## 仓库结构
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- `snippets/` — 包含多个 VS Code 片段文件：
+  - `capital.code-snippets` — 示例/大写前缀片段
+  - `lower.code-snippets` — 示例/小写前缀片段
+  - `snippet.code-snippets` — 常用 MAML 片段集合
+- `README.md` — 本文件
+- `package.json`、`CHANGELOG.md` 等扩展元信息
 
-## Known Issues
+## 片段示例（说明）
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- 前缀 `maml-container`：插入带有位置、大小与子元素占位的容器模板
+- 前缀 `maml-text`：插入带样式与绑定表达式的文本节点模板
+- 前缀 `maml-image`：图像元素模板，含缩放/资源引用示例
 
-## Release Notes
+（具体的前缀与触发词请参考 `snippets/` 目录下的文件）
 
-Users appreciate release notes as you update your extension.
+## 使用建议与注意事项
 
-### 1.0.0
+- MAML 是面向运行时渲染的标记语言，很多效果需要在目标设备或 MAML 引擎上预览才能完全呈现。
+- 合理使用动态帧率与条件更新，避免无谓的全速渲染导致电量消耗。
+- 本片段旨在提高编写效率，但不替代对 MAML 语法和引擎特性的深入理解。
 
-Initial release of ...
+## 贡献
 
-### 1.0.1
+欢迎提交 issue 或 PR：
 
-Fixed issue #.
+- 修正或补充片段
+- 添加更多示例与注释
+- 增加针对特定场景的片段集合
 
-### 1.1.0
+在提交 PR 前请确保遵循仓库的代码风格与简洁注释要求。
 
-Added features X, Y, and Z.
+## 许可
+
+该项目使用 MIT 许可证（如果需要请根据实际情况替换为正确许可证）。
+
+## 联系
+
+如有问题或建议，请在仓库中打开 Issue，或联系维护者。
 
 ---
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+感谢使用 `maml-xml-snippets`，希望它能让你更快上手 MAML 开发。

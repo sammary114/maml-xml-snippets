@@ -1,5 +1,5 @@
 {
-  "ExpoEaseIn": {
+  "指数曲线缓入": {
     "prefix": "expoeasein",
     "body": [
       "ExpoEaseIn"
@@ -7,7 +7,7 @@
     "scope": "",
     "description": "指数曲线缓入"
   },
-  "ImageMusic": {
+  "音乐封面": {
     "prefix": "image",
     "body": [
       "<Image x=\"$1\" y=\"$2\" w=\"$3\" h=\"$4\" src=\"music_control.artwork\" srcType=\"BitmapVar\"/>"
@@ -15,7 +15,7 @@
     "scope": "",
     "description": "音乐封面"
   },
-  "PressedState": {
+  "按下状态": {
     "prefix": "pressedstate",
     "body": [
       "<PressedState>",
@@ -25,7 +25,7 @@
     "scope": "",
     "description": "按下状态"
   },
-  "QuadEaseOut": {
+  "二次方缓出": {
     "prefix": "quadeaseout",
     "body": [
       "QuadEaseOut"
@@ -33,7 +33,7 @@
     "scope": "",
     "description": "二次方缓出"
   },
-  "VarAnimation": {
+  "变量动画": {
     "prefix": "var",
     "body": [
       "<Var name=\"$1\">",
@@ -54,7 +54,7 @@
     "scope": "",
     "description": "Extra"
   },
-  "MiWallpaper": {
+  "百变壁纸根标签": {
     "prefix": "miwallpaper",
     "body": [
       "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
@@ -65,7 +65,7 @@
     "scope": "",
     "description": "百变壁纸根标签"
   },
-  "VariableBinders": {
+  "定义绑定源": {
     "prefix": "variablebinders",
     "body": [
       "<VariableBinders>",
