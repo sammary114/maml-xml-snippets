@@ -1,0 +1,788 @@
+{
+  "ImageMusic": {
+    "prefix": "Image",
+    "body": [
+      "<Image x=\"$1\" y=\"$2\" w=\"$3\" h=\"$4\" src=\"music_control.artwork\" srcType=\"BitmapVar\"/>"
+    ],
+    "scope": "",
+    "description": "音乐封面"
+  },
+  "PressedState": {
+    "prefix": "PressedState",
+    "body": [
+      "PressedState>",
+      "\t$1",
+      "</PressedState>"
+    ],
+    "scope": "",
+    "description": "按下状态"
+  },
+  "Icon": {
+    "prefix": "Icon",
+    "body": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+      "<Icon version=\"1\" frameRate=\"0\" width=\"182\" height=\"182\" screenWidth=\"1080\" useVariableUpdater=\"DateTime.Day\">",
+      "\t$1",
+      "</Icon>"
+    ],
+    "scope": "",
+    "description": "百变图标根标签"
+  },
+  "VarAnimation": {
+    "prefix": "Var",
+    "body": [
+      "<Var name=\"$1\">",
+      "\t<VariableAnimation loop=\"false\" initPause=\"true\">",
+      "\t\t<AniFrame value=\"$3\" time=\"0\" easeType=\"QuintEaseOut\"/>",
+      "\t\t<AniFrame value=\"$4\" time=\"500\"/>",
+      " \t</VariableAnimation>",
+      "</Var>"
+    ],
+    "scope": "",
+    "description": "变量动画"
+  },
+  "Extra": {
+    "prefix": "Extra",
+    "body": [
+      "<Extra name=\"${1:test}\" type=\"number\" expression=\"$2\" />"
+    ],
+    "scope": "",
+    "description": "Extra"
+  },
+  "MiWallpaper": {
+    "prefix": "MiWallpaper",
+    "body": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+      "<MiWallpaper version=\"1\" frameRate=\"60\" screenWidth=\"1080\">",
+      "\t$1",
+      "</MiWallpaper>"
+    ],
+    "scope": "",
+    "description": "百变壁纸根标签"
+  },
+  "VariableBinders": {
+    "prefix": "VariableBinders",
+    "body": [
+      "VariableBinders>",
+      "\t$1",
+      "</VariableBinders>"
+    ],
+    "scope": "",
+    "description": "定义绑定源"
+  },
+  "Weather": {
+    "prefix": "Weather",
+    "body": [
+      "<ContentProviderBinder name=\"weather_provider\" uri=\"content://weather/weather\" columns=\"city_id,city_name,weather_type,aqilevel,description,temperature,forecast_type,tmphighs,tmplows,wind,humidity\" countName=\"hasweather\">",
+      "\t<Variable name=\"weather_location_id\" type=\"string\" column=\"city_id\"/>",
+      "\t<Variable name=\"weather_location\" type=\"string\" column=\"city_name\"/>",
+      "\t<Variable name=\"weather_id\" type=\"int\" column=\"weather_type\"/>",
+      "\t<Variable name=\"weather_type\" type=\"string[]\" column=\"weather_type\"/>",
+      "\t<Variable name=\"weather_description\" type=\"string\" column=\"description\"/>",
+      "\t<Variable name=\"weather_temperature\" type=\"int\" column=\"temperature\"/>",
+      "\t<Variable name=\"weather_aqi\" type=\"int\" column=\"aqilevel\"/>",
+      "\t<Variable name=\"weather_temphigh\" type=\"string[]\" column=\"tmphighs\"/>",
+      "\t<Variable name=\"weather_templow\" type=\"string[]\" column=\"tmplows\"/>",
+      "</ContentProviderBinder>"
+    ],
+    "scope": "",
+    "description": "天气Provider"
+  },
+  "Circle": {
+    "prefix": "Circle",
+    "body": [
+      "<Circle x=\"$1\" y=\"$2\" r=\"$3\" fillColor=\"$4\"  strokeColor=\"$5\" />"
+    ],
+    "scope": "",
+    "description": "Maml"
+  },
+  "SearchBar": {
+    "prefix": "SearchBar",
+    "body": [
+      "<SearchBar />"
+    ],
+    "scope": "",
+    "description": "Maml"
+  },
+  "Wallpaper": {
+    "prefix": "Wallpaper",
+    "body": [
+      "<Wallpaper />"
+    ],
+    "scope": "",
+    "description": "壁纸"
+  },
+  "BinderCommand": {
+    "prefix": "BinderCommand",
+    "body": [
+      "<BinderCommand name=\"$1\" command=\"refresh\" />"
+    ],
+    "scope": "",
+    "description": "刷新接口"
+  },
+  "WebServiceBinder": {
+    "prefix": "WebServiceBinder",
+    "body": [
+      "<WebServiceBinder name=\"$1\" uri=\"$2\" paramsFormat=\"$3:%s,$4:%s\" paramsParas=\"@$5,@$6\" requestMethod=\"${7:get}\" queryAtStart=\"${8:false}\" protocol=\"json/obj\"  updateInterval=\"3600\" updateIntervalFail=\"60\">",
+      "\t<Variable name=\"$9\" type=\"string[]\" path=\"$10\" innerPath=\"$11\"/>",
+      "</WebServiceBinder>"
+    ],
+    "scope": "",
+    "description": "网络接口"
+  },
+  "Triggers": {
+    "prefix": "Triggers",
+    "body": [
+      "Triggers>",
+      "\t<Trigger action=\"${1:up}\">",
+      "\t\t$2",
+      "\t</Trigger>",
+      "</Triggers>"
+    ],
+    "scope": "",
+    "description": "Triggers"
+  },
+  "ImageIcon": {
+    "prefix": "Image",
+    "body": [
+      "<Image x=\"$1\" y=\"$2\" w=\"$3\" h=\"$4\" srcType=\"ApplicationIcon\" srcExp=\\\"'${5:包名},${6:类名}'\\\"/>"
+    ],
+    "scope": "",
+    "description": "图标"
+  },
+  "EndPoint": {
+    "prefix": "EndPoint",
+    "body": [
+      "<EndPoint x=\"$1\" y=\"$2\" w=\"$3\" h=\"$4\">",
+      "\t<Path x=\"$5\" y=\"$6\"  tolerance=\"1000\">",
+      "\t\t<Position x=\"0\" y=\"0\" />",
+      "\t\t<Position x=\"300\" y=\"0\" />",
+      "\t</Path>",
+      "</EndPoint>"
+    ],
+    "scope": "",
+    "description": "目标点"
+  },
+  "ContentProviderBinder": {
+    "prefix": "ContentProviderBinder",
+    "body": [
+      "<ContentProviderBinder name=\"$1\" uri=\"$2\" columns=\"$3,$4\" countName=\"has$5\">",
+      "\t<Variable name=\"$6\" type=\"${7:string}\" column=\"$8\" />",
+      "</ContentProviderBinder>"
+    ],
+    "scope": "",
+    "description": "Provider接口"
+  },
+  "LeftScreen": {
+    "prefix": "LeftScreen",
+    "body": [
+      "<LeftScreen x=\"${1:#defaultScreen_x-1080}\" visibility=\"${2:#defaultScreen_x\\}0}\" />"
+    ],
+    "scope": "",
+    "description": "负一屏"
+  },
+  "DefaultLockScreen": {
+    "prefix": "DefaultLockScreen",
+    "body": [
+      "<DefaultLockScreen />"
+    ],
+    "scope": "",
+    "description": "带负一屏的默认锁屏"
+  },
+  "Path": {
+    "prefix": "Path",
+    "body": [
+      "<Path x=\"$1\" y=\"$2\" tolerance=\"$3\">",
+      "\t<Position x=\"$4\" y=\"$5\" />",
+      "\t<Position x=\"$6\" y=\"$7\" />",
+      "</Path>"
+    ],
+    "scope": "",
+    "description": "滑动路径"
+  },
+  "MultiCommand": {
+    "prefix": "MultiCommand",
+    "body": [
+      "MultiCommand >",
+      "\t$1",
+      "</MultiCommand>"
+    ],
+    "scope": "",
+    "description": "命令组"
+  },
+  "ExternCommand": {
+    "prefix": "ExternCommand",
+    "body": [
+      "<ExternCommand command=\"unlock\" delay=\"\"/>"
+    ],
+    "scope": "",
+    "description": "解锁"
+  },
+  "Line": {
+    "prefix": "Line",
+    "body": [
+      "<Line x=\"$1\" y=\"$2\" x1=\"$3\" y1=\"$4\" strokeColor=\"$5\" weight=\"$6\"/>"
+    ],
+    "scope": "",
+    "description": "矢量图形-直线"
+  },
+  "Button": {
+    "prefix": "Button",
+    "body": [
+      "Button name=\"$1\" x=\"$2\" y=\"$3\" w=\"$4\" h=\"$5\">",
+      "\t<Triggers>",
+      "\t\t<Trigger action=\"up\">",
+      "\t\t\t$6",
+      "\t\t</Trigger>",
+      "\t</Triggers>",
+      "</Button>"
+    ],
+    "scope": "",
+    "description": "按钮"
+  },
+  "Slider": {
+    "prefix": "Slider",
+    "body": [
+      "Slider name=\"$1\" alwaysShow=\"true\" bounceInitSpeed=\"2000\" bounceAccelation=\"1500\" >",
+      "\t<StartPoint x=\"$2\" y=\"$3\" w=\"$4\" h=\"$5\">",
+      "\t\t<NormalState>",
+      "\t\t\t$6",
+      "\t\t</NormalState>",
+      "\t\t<PressedState>",
+      "\t\t</PressedState>",
+      "\t</StartPoint>",
+      "\t<EndPoint x=\"\" y=\"\" w=\"\" h=\"\">",
+      "\t\t<Trigger> ",
+      "\t\t\t$6",
+      "\t\t</Trigger>",
+      "\t</EndPoint>",
+      "</Slider>"
+    ],
+    "scope": "",
+    "description": "Maml"
+  },
+  "Text": {
+    "prefix": "Text",
+    "body": [
+      "<Text x=\"$1\" y=\"$2\"  color=\"$3\" size=\"$4\" textExp=\"$5\"/>"
+    ],
+    "scope": "",
+    "description": "文字"
+  },
+  "VariableCommand": {
+    "prefix": "VariableCommand",
+    "body": [
+      "<VariableCommand name=\"$1\" expression=\"${2:0}\"/>"
+    ],
+    "scope": "",
+    "description": "变量赋值"
+  },
+  "ExternalCommands": {
+    "prefix": "ExternCommands",
+    "body": [
+      "ExternalCommands>",
+      "\t<Trigger action=\"${1:resume}\">",
+      "\t\t$2",
+      "\t</Trigger>",
+      "</ExternalCommands>"
+    ],
+    "scope": "",
+    "description": "开屏初始化"
+  },
+  "Notice": {
+    "prefix": "Notice",
+    "body": [
+      "<ContentProviderBinder uri=\"content://keyguard.notification/notifications\" columns=\"icon,title,content,time,info,subtext,key\" countName=\"hasnotifications\" >",
+      "\t<List name=\"notification_list\" />",
+      "</ContentProviderBinder>"
+    ],
+    "scope": "",
+    "description": "通知Provider"
+  },
+  "Paint": {
+    "prefix": "Paint",
+    "body": [
+      "<Paint x=\"$1\" y=\"\" w=\"\" h=\"\" color=\"\" weight=\"\" />"
+    ],
+    "scope": "",
+    "description": "笔刷"
+  },
+  "NoticeList": {
+    "prefix": "Notice",
+    "body": [
+      "<List name=\"notification_list\" x=\"0\" y=\"0\" w=\"858\" maxHeight=\"370\" data=\"icon:bitmap,title:string,content:string,time:string,info:string,subtext:string,key:int\" visibility=\"#hasnotifications\">",
+      "\t<Item x=\"0\" y=\"0\" w=\"858\" h=\"185\">",
+      "\t\t<Button x=\"0\" y=\"0\" w=\"858\" h=\"185\" >",
+      "\t\t\t<Normal>",
+      "\t\t\t\t<Image x=\"0\" y=\"0\" src=\"notice_bg.png\" />",
+      "\t\t\t</Normal>",
+      "\t\t\t<Pressed>",
+      "\t\t\t\t<Image x=\"0\" y=\"0\" src=\"notice_bg.png\" alpha=\"120\" />",
+      "\t\t\t</Pressed>",
+      "\t\t\t<Image x=\"50\" y=\"21\" w=\"114\" h=\"114\" name=\"notification_icon\" />",
+      "\t\t\t<Text x=\"190\" y=\"42\" size=\"32\" color=\"#ee000000\" bold=\"true\" w=\"500\" h=\"36\" marqueeSpeed=\"30\" name=\"notification_title\" />",
+      "\t\t\t<Text x=\"190\" y=\"80\" size=\"28\" color=\"#b4000000\" w=\"500\" h=\"42\" marqueeSpeed=\"30\" name=\"notification_content\" />",
+      "\t\t\t<Text x=\"800\" y=\"64\" size=\"28\" align=\"right\" color=\"#b4000000\"  name=\"notification_time\" />",
+      "\t\t\t<Triggers>",
+      "\t\t\t\t<Trigger action=\"up\">",
+      "\t\t\t\t\t<IntentCommand action=\"com.miui.app.ExtraStatusBarManager.action_remove_keyguard_notification\" broadcast=\"true\">",
+      "\t\t\t\t\t\t<Extra name=\"com.miui.app.ExtraStatusBarManager.extra_notification_key\" type=\"int\" expression=\"#notification_list.key\" />",
+      "\t\t\t\t\t\t<Extra name=\"com.miui.app.ExtraStatusBarManager.extra_notification_click\" type=\"int\" expression=\"(#touch_x-#touch_begin_x) } -100\" />",
+      "\t\t\t\t\t</IntentCommand>",
+      "\t\t\t\t</Trigger>",
+      "\t\t\t</Triggers>",
+      "\t\t</Button>",
+      "\t</Item>",
+      "\t<AttrDataBinders>",
+      "\t\t<AttrDataBinder target=\"notification_icon\" attr=\"bitmap\" data=\"icon\" />",
+      "\t\t<AttrDataBinder target=\"notification_title\" attr=\"text\" data=\"title\" />",
+      "\t\t<AttrDataBinder target=\"notification_content\" attr=\"text\" data=\"content\" />",
+      "\t\t<AttrDataBinder target=\"notification_time\" attr=\"text\" data=\"time\" />",
+      "\t</AttrDataBinders>",
+      "</List>"
+    ],
+    "scope": "",
+    "description": "通知List"
+  },
+  "SensorBinder": {
+    "prefix": "SensorBinder",
+    "body": [
+      "<SensorBinder type=\"gravity\"  rate=\"0\">",
+      "\t<Variable name=\"$1\" index=\"0\"/>",
+      "\t<Variable name=\"$2\" index=\"1\"/>",
+      "\t<Variable name=\"$3\" index=\"2\" />",
+      "</SensorBinder>"
+    ],
+    "scope": "",
+    "description": "传感器"
+  },
+  "CommandAnimation": {
+    "prefix": "Command",
+    "body": [
+      "<Command target=\"${1:test}.animation\" value=\"play\" />"
+    ],
+    "scope": "",
+    "description": "动画播放"
+  },
+  "FramerateController": {
+    "prefix": "FramerateController",
+    "body": [
+      "<FramerateController loop=\"${1:false}\">",
+      "\t<ControlPoint time=\"0\" frameRate=\"60\"/>",
+      "\t<ControlPoint time=\"1000\" frameRate=\"60\"/>",
+      "\t<ControlPoint time=\"1001\" frameRate=\"0\"/>",
+      "</FramerateController>"
+    ],
+    "scope": "",
+    "description": "动态帧率"
+  },
+  "Rectangle": {
+    "prefix": "Rectangle",
+    "body": [
+      "<Rectangle x=\"$1\"  y=\"$2\" w=\"$3\" h=\"$4\" fillColor=\"$5\" cornerRadius=\"${6:横半径},${7:y纵半径}\"/>"
+    ],
+    "scope": "",
+    "description": "矢量图形-矩形"
+  },
+  "IntentCommandBroadcast": {
+    "prefix": "IntentCommand",
+    "body": [
+      "<IntentCommand action=\"initialization\" broadcast=\"true\">",
+      "\t<Extra name=\"${1:test}\" type=\"number\" expression=\"$2\" />",
+      "</IntentCommand>"
+    ],
+    "scope": "",
+    "description": "发送广播"
+  },
+  "NormalState": {
+    "prefix": "NormalState",
+    "body": [
+      "NormalState>",
+      "\t$1",
+      "</NormalState>"
+    ],
+    "scope": "",
+    "description": "正常状态"
+  },
+  "MusicControl": {
+    "prefix": "MusicControl",
+    "body": [
+      "<MusicControl name=\"music_control\" x=\"$1\" y=\"$2\" autoShow=\"${3:true}\" defAlbumCover=\"default_album.png\" enableLyric=\"true\" updateLyricInterval=\"100\">",
+      "  <Image name=\"music_album_cover\"/>",
+      "  <Text textExp=\"@music_control.title\"/>",
+      "  <Text textExp=\"@music_control.artist\"/>",
+      "  <Button name=\"music_prev\"/>",
+      "  <Button name=\"music_next\"/>",
+      "  <Button name=\"music_play\"/>",
+      "  <Button name=\"music_pause\"/>",
+      "</MusicControl>"
+    ],
+    "scope": "",
+    "description": "音乐控件"
+  },
+  "MethodCommand": {
+    "prefix": "MethodCommand",
+    "body": [
+      "<MethodCommand target=\\\"triggersContainer\\\" method=\\\"performAction\\\" paramTypes=\\\"String\\\" params=\\\"'fine1'\\\" />"
+    ],
+    "scope": "",
+    "description": "组操作"
+  },
+  "Calendar": {
+    "prefix": "Calendar",
+    "body": [
+      "<Calendar/>"
+    ],
+    "scope": "",
+    "description": "Maml"
+  },
+  "FillShaders": {
+    "prefix": "FillShaders",
+    "body": [
+      "<FillShaders>",
+      "\t<LinearGradient x=\"$1\" y=\"$2\" x1=\"$3\" y1=\"$4\" tile=\"$5clamp拉伸 mirror镜像 repeat重复\">",
+      "\t\t<GradientStop color=\"\" position=\"0\"/>",
+      "\t\t<GradientStop color=\"\" position=\"0.5\"/>",
+      "\t\t<GradientStop color=\"\" position=\"1\"/>",
+      "\t</LinearGradient>",
+      "</FillShaders>"
+    ],
+    "scope": "",
+    "description": "颜色填充"
+  },
+  "Clock": {
+    "prefix": "Clock",
+    "body": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+      "<Clock version=\"1\" frameRate=\"0\" screenWidth=\"1080\" scaleByDensity=\"false\" useVariableUpdater=\"DateTime.Minute\">",
+      "\t$1",
+      "</Clock>"
+    ],
+    "scope": "",
+    "description": "百变时钟根标签"
+  },
+  "Pressed": {
+    "prefix": "Pressed",
+    "body": [
+      "Pressed>",
+      "\t$1",
+      "</Pressed>"
+    ],
+    "scope": "",
+    "description": "按下状态"
+  },
+  "List": {
+    "prefix": "List",
+    "body": [
+      "<List name=\"notification_list\" x=\"0\" y=\"0\" w=\"858\" maxHeight=\"370\" data=\"icon:bitmap,title:string,content:string,time:string,info:string,subtext:string,key:int\" visibility=\"#hasnotifications\">",
+      "\t<Item x=\"0\" y=\"0\" w=\"858\" h=\"185\">",
+      "\t\t<Button x=\"0\" y=\"0\" w=\"858\" h=\"185\" >",
+      "\t\t\t<Normal>",
+      "\t\t\t\t<Image x=\"0\" y=\"0\" src=\"notice_bg.png\" />",
+      "\t\t\t</Normal>",
+      "\t\t\t<Pressed>",
+      "\t\t\t\t<Image x=\"0\" y=\"0\" src=\"notice_bg.png\" alpha=\"120\" />",
+      "\t\t\t</Pressed>",
+      "\t\t\t<Image x=\"50\" y=\"21\" w=\"114\" h=\"114\" name=\"notification_icon\" />",
+      "\t\t\t<Text x=\"190\" y=\"42\" size=\"32\" color=\"#ee000000\" bold=\"true\" w=\"500\" h=\"36\" marqueeSpeed=\"30\" name=\"notification_title\" />",
+      "\t\t\t<Text x=\"190\" y=\"80\" size=\"28\" color=\"#b4000000\" w=\"500\" h=\"42\" marqueeSpeed=\"30\" name=\"notification_content\" />",
+      "\t\t\t<Text x=\"800\" y=\"64\" size=\"28\" align=\"right\" color=\"#b4000000\"  name=\"notification_time\" />",
+      "\t\t\t<Triggers>",
+      "\t\t\t\t<Trigger action=\"up\">",
+      "\t\t\t\t\t<IntentCommand action=\"com.miui.app.ExtraStatusBarManager.action_remove_keyguard_notification\" broadcast=\"true\">",
+      "\t\t\t\t\t\t<Extra name=\"com.miui.app.ExtraStatusBarManager.extra_notification_key\" type=\"int\" expression=\"#notification_list.key\" />",
+      "\t\t\t\t\t\t<Extra name=\"com.miui.app.ExtraStatusBarManager.extra_notification_click\" type=\"int\" expression=\"(#touch_x-#touch_begin_x) } -100\" />",
+      "\t\t\t\t\t</IntentCommand>",
+      "\t\t\t\t</Trigger>",
+      "\t\t\t</Triggers>",
+      "\t\t</Button>",
+      "\t</Item>",
+      "\t<AttrDataBinders>",
+      "\t\t<AttrDataBinder target=\"notification_icon\" attr=\"bitmap\" data=\"icon\" />",
+      "\t\t<AttrDataBinder target=\"notification_title\" attr=\"text\" data=\"title\" />",
+      "\t\t<AttrDataBinder target=\"notification_content\" attr=\"text\" data=\"content\" />",
+      "\t\t<AttrDataBinder target=\"notification_time\" attr=\"text\" data=\"time\" />",
+      "\t</AttrDataBinders>",
+      "</List>"
+    ],
+    "scope": "",
+    "description": "通知List"
+  },
+  "CommandVisibility": {
+    "prefix": "Command",
+    "body": [
+      "<Command target=\"${1:test}.visibility\" value=\"true\" />"
+    ],
+    "scope": "",
+    "description": "可见性命令"
+  },
+  "IntentCommand": {
+    "prefix": "IntentCommand",
+    "body": [
+      "<IntentCommand id=\"${1:id}\" action=\"${2:android.intent.action.MAIN}\" package=\"$3\" class=\"$4\" />"
+    ],
+    "scope": "",
+    "description": "超链接"
+  },
+  "StrokeShaders": {
+    "prefix": "StrokeShaders",
+    "body": [
+      "<StrokeShaders>",
+      "\t<LinearGradient x=\"$1\" y=\"$2\" x1=\"$3\" y1=\"$4\" tile=\"$5clamp拉伸 mirror镜像 repeat重复\">",
+      "\t\t<GradientStop color=\"\" position=\"0\"/>",
+      "\t\t<GradientStop color=\"\" position=\"0.5\"/>",
+      "\t\t<GradientStop color=\"\" position=\"1\"/>",
+      "\t</LinearGradient>",
+      "</StrokeShaders>"
+    ],
+    "scope": "",
+    "description": "描边渐变色"
+  },
+  "UnlockerDown": {
+    "prefix": "Unlocker",
+    "body": [
+      "<Unlocker name=\"unlocker\" alwaysShow=\"true\" >",
+      "\t<StartPoint x=\"0\" y=\"0\" w=\"1080\" h=\"#screen_height\" easeType=\"BounceEaseOut\" easeTime=\"800\"/>",
+      "\t<EndPoint x=\"0\" y=\"300\" w=\"1080\" h=\"#screen_height\">",
+      "\t\t<Path x=\"0\" y=\"0\" tolerance=\"2000\">",
+      "\t\t\t<Position x=\"0\" y=\"0\" />",
+      "\t\t\t<Position x=\"0\" y=\"#screen_height\" />",
+      "\t\t</Path>",
+      "\t</EndPoint>",
+      "</Unlocker>"
+    ],
+    "scope": "",
+    "description": "下滑解锁"
+  },
+  "VarEnd": {
+    "prefix": "Var",
+    "body": [
+      "<Var name=\"$1\">",
+      "\t<VariableAnimation name=\"$2\" loop=\"false\" initPause=\"true\">",
+      "\t\t<AniFrame value=\"$3\" time=\"0\" easeType=\"QuintEaseOut\"/>",
+      "\t\t<AniFrame value=\"$4\" time=\"500\"/>",
+      "\t\t<Triggers>",
+      "\t\t\t<Trigger action=\"end\" condition=\"#$2.current_frame==-1\">",
+      "\t\t\t\t$5",
+      "\t\t \t</Trigger>",
+      "\t \t</Triggers>",
+      " \t</VariableAnimation>",
+      "</Var>"
+    ],
+    "scope": "",
+    "description": "结束自动执行"
+  },
+  "Variable": {
+    "prefix": "Variable",
+    "body": [
+      "<Variable name=\"$1\" type=\"${2:int}\" column=\"$3\" row=\"$4\"/>"
+    ],
+    "scope": "",
+    "description": "绑定Provide参数"
+  },
+  "Image": {
+    "prefix": "Image",
+    "body": [
+      "<Image x=\"$1\" y=\"$2\" src=\"$4\" />"
+    ],
+    "scope": "",
+    "description": "图片"
+  },
+  "Time": {
+    "prefix": "Time",
+    "body": [
+      "<Time x=\"$1\" y=\"$2\" src=\"$3\" space=\"0\" format=\"HH:mm\"/>"
+    ],
+    "scope": "",
+    "description": "时间"
+  },
+  "StartPoint": {
+    "prefix": "StartPoint",
+    "body": [
+      "StartPoint x=\"$1\" y=\"$2\" w=\"$3\" h=\"$4\">",
+      "\t<NormalState>",
+      "\t\t$5",
+      "\t</NormalState>",
+      "</StartPoint>"
+    ],
+    "scope": "",
+    "description": "起始点"
+  },
+  "UnlockerUP": {
+    "prefix": "Unlocker ",
+    "body": [
+      "<Unlocker name=\"unlocker\" alwaysShow=\"true\" >",
+      "\t<StartPoint x=\"0\" y=\"0\" w=\"1080\" h=\"#screen_height\" easeType=\"QuintEaseOut\" easeTime=\"600\"/>",
+      "\t<EndPoint x=\"0\" y=\"-#screen_height-300\" w=\"1080\" h=\"#screen_height\" >",
+      "\t\t<Path x=\"0\" y=\"0\" tolerance=\"2000\">",
+      "\t\t\t<Position x=\"0\" y=\"0\" />",
+      "\t\t\t<Position x=\"0\" y=\"-#screen_height\" />",
+      "\t\t</Path>",
+      "\t</EndPoint>",
+      "</Unlocker>"
+    ],
+    "scope": "",
+    "description": "上滑解锁"
+  },
+  "ImageNumber": {
+    "prefix": "ImageNumber",
+    "body": [
+      "<ImageNumber src=\"$1\" number=\"$2\" />"
+    ],
+    "scope": "",
+    "description": "数字图片"
+  },
+  "UnlockerLeft": {
+    "prefix": "Unlocker",
+    "body": [
+      "<Unlocker name=\"unlocker\" alwaysShow=\"true\"  >",
+      "\t<StartPoint x=\"0\" y=\"0\" w=\"1080\" h=\"#screen_height\" easeType=\"QuintEaseOut\" easeTime=\"300\"/>",
+      "\t<EndPoint x=\"-1080-300\" y=\"0\" w=\"1080\" h=\"#screen_height\">",
+      "\t\t<Path x=\"0\" y=\"0\" tolerance=\"1500\">",
+      "\t\t\t<Position x=\"0\" y=\"0\" />",
+      "\t\t\t<Position x=\"-1080\" y=\"0\" />",
+      "\t\t</Path>",
+      "\t</EndPoint>",
+      "</Unlocker>"
+    ],
+    "scope": "",
+    "description": "左滑解锁"
+  },
+  "Var": {
+    "prefix": "Var",
+    "body": [
+      "<Var name=\"$1\" expression=\"$2\" />"
+    ],
+    "scope": "",
+    "description": "变量"
+  },
+  "AnimationCommand": {
+    "prefix": "AnimationCommand",
+    "body": [
+      "<AnimationCommand target=\"${1:test}\" command=\"play\"/>"
+    ],
+    "scope": "",
+    "description": "动画播放命令"
+  },
+  "DefaultScreen": {
+    "prefix": "DefaultScreen",
+    "body": [
+      "<DefaultScreen />"
+    ],
+    "scope": "",
+    "description": "默认锁屏框架"
+  },
+  "UnlockerRight": {
+    "prefix": "Unlocker",
+    "body": [
+      "<Unlocker name=\"unlocker\" alwaysShow=\"true\"  >",
+      "\t<StartPoint x=\"0\" y=\"0\" w=\"1080\" h=\"#screen_height\" easeType=\"BounceEaseOut\" easeTime=\"800\"/>",
+      "\t<EndPoint x=\"300\" y=\"0\" w=\"1080\" h=\"#screen_height\">",
+      "\t\t<Path x=\"0\" y=\"0\" tolerance=\"1500\">",
+      "\t\t\t<Position x=\"0\" y=\"0\" />",
+      "\t\t\t<Position x=\"1080\" y=\"0\" />",
+      "\t\t</Path>",
+      "\t</EndPoint>",
+      "</Unlocker>"
+    ],
+    "scope": "",
+    "description": "右滑解锁"
+  },
+  "VarThreshold": {
+    "prefix": "Var",
+    "body": [
+      "Var expression=\"$1\" threshold=\"1\">",
+      "\t<Trigger>",
+      "\t\t$2",
+      "\t</Trigger>",
+      "</Var>"
+    ],
+    "scope": "",
+    "description": "阈值触发"
+  },
+  "Arc": {
+    "prefix": "Arc",
+    "body": [
+      "<Arc x=\"$1\" y=\"$2\" w=\"$3\" h=\"$4\" fillColor=\"$5\" startAngle=\"$6\" sweep=\"$7\" close=\"$8\" strokeColor=\"$9\" weight=\"$10\" />"
+    ],
+    "scope": "",
+    "description": "矢量图形-圆弧"
+  },
+  "Lockscreen": {
+    "prefix": "Lockscreen",
+    "body": [
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+      "<Lockscreen version=\"1\" frameRate=\"60\" displayDesktop=\"false\" screenWidth=\"1080\">",
+      "\t$1",
+      "</Lockscreen>"
+    ],
+    "scope": "",
+    "description": "锁屏根标签"
+  },
+  "LoopCommand": {
+    "prefix": "LoopCommand",
+    "body": [
+      "LoopCommand count=\"$1\" indexName=\"$2\">",
+      "\t$3",
+      "</LoopCommand>"
+    ],
+    "scope": "",
+    "description": "循环"
+  },
+  "DateTime": {
+    "prefix": "DateTime",
+    "body": [
+      "<DateTime x=\"$1\" y=\"$2\" color=\"$3\" size=\"$4\" format=\"M月d日 EE\"/>"
+    ],
+    "scope": "",
+    "description": "时间"
+  },
+  "SoundCommand": {
+    "prefix": "SoundCommand",
+    "body": [
+      "<SoundCommand sound=\"$1\" volume=\"${2:音量0~1}\" loop=\"${3:循环播放false|true}\" keepCur=\"${4:保持当前播放false|true}\" />"
+    ],
+    "scope": "",
+    "description": "播放音频"
+  },
+  "Normal": {
+    "prefix": "Normal",
+    "body": [
+      "Normal>",
+      "\t$1",
+      "</Normal>"
+    ],
+    "scope": "",
+    "description": "正常状态"
+  },
+  "Trigger": {
+    "prefix": "Trigger",
+    "body": [
+      "Trigger action=\"${1:up}\" >",
+      "\t$2",
+      "</Trigger>"
+    ],
+    "scope": "",
+    "description": "Trigger"
+  },
+  "Array": {
+    "prefix": "Array",
+    "body": [
+      "Array count=\"$1\" indexName=\"$2\" >",
+      "\t$3",
+      "</Array>"
+    ],
+    "scope": "",
+    "description": "数组"
+  },
+  "Group": {
+    "prefix": "Group",
+    "body": [
+      "Group>",
+      "\t$3",
+      "</Group>"
+    ],
+    "scope": "",
+    "description": "群组"
+  }
+}
